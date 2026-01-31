@@ -117,25 +117,25 @@ const EMSDetail: React.FC<EMSDetailProps> = ({ onClose, simState, params, onUpda
                         <TabButton
                             icon={<CircleDot className="w-4 h-4" />}
                             label="State Machine"
-                            active={viewMode === 'statemachine'}
+                            active={true}
                             onClick={() => setViewMode('statemachine')}
                         />
                         <TabButton
                             icon={<Map className="w-4 h-4" />}
                             label="Strategy Map"
-                            active={viewMode === 'strategymap'}
+                            active={false}
                             onClick={() => setViewMode('strategymap')}
                         />
                         <TabButton
                             icon={<GitBranch className="w-4 h-4" />}
                             label="Simulink"
-                            active={viewMode === 'simulink'}
+                            active={false}
                             onClick={() => setViewMode('simulink')}
                         />
                         <TabButton
                             icon={<Timer className="w-4 h-4" />}
                             label="Drive Cycle"
-                            active={viewMode === 'drivingcycle'}
+                            active={false}
                             onClick={() => setViewMode('drivingcycle')}
                         />
                     </div>
